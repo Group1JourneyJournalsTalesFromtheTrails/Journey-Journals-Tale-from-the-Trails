@@ -1,0 +1,495 @@
+body, html {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container
+{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(background/bg\ attractions.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+
+.content h2 {    
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.content h1 {
+    color: #2793e6;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-top: -30px;
+}
+
+.content a {
+    background: #7a80f8;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.content a:hover {
+    background: #4ca3ff;
+    color: #fff;
+}
+
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-top: 3px;  
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style:none;
+    display:inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Transparent black background */
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.album,
+.recommended,
+.comments {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.photo-container img {
+    width: 111vh;
+    height: 55vh;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    animation: changeImage 10s linear infinite;
+    justify-content: center;
+    align-items: center;
+}
+.pic-container {
+    width: 130vh;
+    height: 55vh;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+   
+    justify-content: center;
+    align-items: center;
+}
+.picg-container img {
+    max-width: 500px; /* Set the maximum width of the image */
+    max-height: 300px; /* Set the maximum height of the image */
+    width: auto; /* Ensure the width adjusts to maintain aspect ratio */
+    height: auto; /* Ensure the height adjusts to maintain aspect ratio */
+
+
+}
+.picg-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 60px;
+    margin-bottom: 30px; /* Add margin as needed */
+}
+
+
+.recommended ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.store,
+.product,
+.review {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+.store-container {
+    position: relative;
+    width: 100%; /* Adjust the width to fit the entire container */
+    overflow: hidden;
+    margin: 0 auto; /* Center the carousel */
+}
+.pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Adjust as needed based on your layout */
+}
+.store-container img {
+    width: 40vh;
+    height: 37vh;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.product ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(163, 218, 245);
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    color: #FFCA3A; /* Use the provided color */
+    text-align: center;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+li{
+    color: rgb(247, 213, 172);
+}
+
+
+h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9); /* Adjust the color and opacity for better visibility */
+    font-size: 50px; /* Adjust the font size as needed */
+    margin-left: 40px;
+    margin-bottom: -30px;
+    text-align: center;
+
+
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better contrast */
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9); /* Adjust the color and opacity for better visibility */
+    font-size: 40px; /* Adjust the font size as needed */
+    
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better contrast */
+}
+h6{
+    font-size: 25px; /* Adjust the font size as needed */
+    margin-bottom: -40px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+    text-indent: 50px;
+    
+    
+}
+.store-container {
+    position: relative;
+    width: 60%; /* Adjust the width to leave space on the right */
+    overflow: hidden;
+    margin: 0 auto; /* Center the carousel */
+}
+
+
+.carousel {
+    display: flex;
+    transition: transform 0.8s ease;
+    
+}
+
+.store-container img {
+    width: 100%; /* Set the width of the images to half of the container width */
+    height: auto;
+    margin: 0 40px; /* Add margin to create spacing between images */
+}
+
+.store-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px; /* Increase button size */
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px; /* Increase button padding */
+}
+
+.store-container .prev {
+    left: 3%; /* Adjust left button position */
+    
+}
+
+.store-container .next {
+    right: 10px; /* Adjust right button position */
+}
+.card {
+    flex: 0 0 350px; /* Set each card to occupy a fixed width */
+    height: 450px; /* Set a fixed height for each card */
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 50px 0 0; /* Adjust the margin between cards */
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.card img {
+    width: 150px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners to images */
+}
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+.card1 {
+    background-image: url(store/putobb.png);
+}
+
+.card2{ 
+    background-image: url(store/pasti.png);
+}
+.card3{
+    background-image: url(store/cassava.png);
+}
+
+.card:hover {
+    transform: translateY(-10px);   
+}
+
+.card {
+    flex: 0 0 350px;
+    height: 450px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 10px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    position: relative;
+}
+.card-content {
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+}
+.col {
+    flex-basis: 50%;
+}
+p{
+    font-size: 25px; /* Adjust the font size as needed */
+    margin-bottom: -40px;
+    margin-top: -30px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+    text-indent: 50px;
+}
+.button1 {
+    width: 180px;
+    font-size: 20px;
+    color: red;
+    border-radius: 20px;
+   border: 0px;
+   padding: 12px 0px;
+
+   outline: none;
+   margin-left: -90px;
+   margin-top: 130px;
+   transition: background 0.3s, color 0.3s;
+   justify-content: space-around;
+   text-decoration: none;
+}
+.button1:hover {
+    background: #ff0000;
+    color: #fff;
+}
+.highlight-text {
+   
+    font-weight: bold; /* Bold font weight */
+    font-size: 30px;
+}
+.product-info {
+    text-align: center; /* Center the content horizontally */
+}
+
+.image-container {
+    margin-top: 70px; /* Adjust the top margin for spacing */
+    
+}
+
+.image-container img {
+    width: auto; /* Set a fixed width for the image */
+    height: 400px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+.comments .comment-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.comment {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+.comment {
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#commentForm {
+    margin-bottom: 15px;
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+.comment {
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+
+}
+
+.comment-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #comments-list {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f3895f;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff4000;
+  }
+  .comment-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  
+  .comment-box p {
+    margin: 0;
+    color: beige;
+    font-size: 15px;
+
+  }
+  .comment-box p:first-child {
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(46, 45, 45);
+  }
+  .review-box {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+   text-align: left;
+   
+  }
+  .reactions button {
+    margin-top: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+

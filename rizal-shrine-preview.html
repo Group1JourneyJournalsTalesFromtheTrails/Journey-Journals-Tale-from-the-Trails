@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizal Shrine Preview</title>
+    <link rel="stylesheet" href="preview-style.css">
+    <link href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+           
+        </div>
+
+        <div class="navbar">
+            <a href="index.html"> 
+                <img src="logo/logo.png" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="attraction.html">PLACES</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="album transparent-section">
+            <h2>Rizal Shrine</h2>
+            <div class="photo-container">
+                <img src="picture/rizal shrine outside.jpg" alt="Image 1">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <section class="recommended transparent-section">
+            <h2>INFORMATION SECTION</h2>
+            <ul>
+                <!-- Embedding YouTube video -->
+                <li class="youtube-container">
+                    
+                    <div class="video-wrapper">
+                        <iframe width="660" height="415" src="https://www.youtube.com/embed/N1OggIvr_GY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <!-- Add more activities and places as needed -->
+                <li>
+                    <h4>Brief History:</h4>
+                    <p>
+                        The Rizal Shrine is a typical rectangular Bahay na Bato, reminiscent of upper-class Filipino homes built during the Spanish Colonial era. The lower portion is made of adobe stone and brick, while the upper portion consists of hardwood. The shrine has a large lawn with a replica of a nipa hut Rizal used to play with his sisters in. Next to the hut is a statue of a young José Rizal, with his dog. This statue was constructed in 1996 for the centennial celebration commemorating Rizal's death.
+                    </p>
+                    <br>
+                    
+                </li>
+                
+                <li>
+                    <h4>Recommended Activities</h4>
+                    <h5><strong>Ancestral Home:</strong></h5>
+                    <h6>
+                        The meticulously reconstructed "Bahay na Bato" (stone house) offers a glimpse into Rizal's 19th-century upbringing. Admire the period furniture, artwork, and artifacts, many of which belonged to the Rizal family. Imagine young Jose playing in the azotea (balcony) or studying in his room.
+                    </h6>
+                </li>
+                
+                <li>
+                    <h5><strong>Explore the museum:</strong></h5>
+                    <h6>
+                        Delve deeper into Rizal's life and work through the museum's extensive collection. See his writings, paintings, sculptures, and personal belongings, including his medical instruments and travel trunks. Learn about his political activism, literary pursuits, and tragic execution.
+                    </h6>
+                    
+                </li>
+                <li>
+                    <h5><strong>Witness a cultural show:</strong></h5>
+                    <h6>
+                         Immerse yourself in Filipino tradition by attending a cultural show hosted by the shrine. Enjoy vibrant performances of folk dances like the Tinikling and Itik-Itik, accompanied by melodious kundiman music. Gain appreciation for the rich cultural heritage that shaped Rizal's identity.</h6>
+                    
+                </li>
+            
+                <li>
+                    <h4>Location:</h4>
+                    <p>Click <a href="https://www.google.com/maps/place/Rizal+Shrine,+JP+Rizal+St,+Calamba,+4027+Laguna/data=!4m2!3m1!1s0x33bd622b6cd9d73f:0x1ccad39e6af85d97?sa=X&ved=2ahUKEwjgwKbJrcuDAxVmzjQHHX7QAn0Q8gF6BAgKEAA">here</a> for directions.</p>
+                </li>
+                <br>
+                <div class="picg-container">
+                    <a href="https://www.google.com/maps/place/Rizal+Shrine,+JP+Rizal+St,+Calamba,+4027+Laguna/data=!4m2!3m1!1s0x33bd622b6cd9d73f:0x1ccad39e6af85d97?sa=X&ved=2ahUKEwjgwKbJrcuDAxVmzjQHHX7QAn0Q8gF6BAgKEAA">
+                        <img src="picture/google maps rizal shrine.png" alt="Image 2">
+                    </a>
+                    <!-- Add more images as needed -->
+                </div>
+                <br>
+                
+            </ul>
+        </section>
+
+        <section class="comments transparent-section">
+            <h2>User Comments/Reviews</h2>
+            <div class="comment-box" data-reacted="false"></div>
+            <div class="comment-container">
+                <h2>Comments</h2>
+                <div id="comments-list"></div>
+                <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+                <button onclick="addComment()">Add Comment</button>
+              </div>
+            </div>
+            </div>
+        </section>
+
+
+    </div>
+<script src="comments.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

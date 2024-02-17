@@ -1,0 +1,404 @@
+body, html {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container
+{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(background/bg\ attractions.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+
+.content h2 {    
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.content h1 {
+    color: #2793e6;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-top: -30px;
+}
+
+.content a {
+    background: #7a80f8;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.content a:hover {
+    background: #4ca3ff;
+    color: #fff;
+}
+
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-top: 3px;  
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style:none;
+    display:inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    transition: color 0.3s ease-in-out;
+    
+    
+}
+nav ul li a:hover {
+    color: #2793e6;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Transparent black background */
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.album,
+.recommended,
+.comments {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.photo-container img {
+    width: 111vh;
+    height: 55vh;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    animation: changeImage 10s linear infinite;
+    justify-content: center;
+    align-items: center;
+}
+.pic-container {
+    width: 130vh;
+    height: 55vh;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+   
+    justify-content: center;
+    align-items: center;
+}
+.picg-container img {
+    max-width: 900px; /* Set the maximum width of the image */
+    max-height: 700px; /* Set the maximum height of the image */
+    width: auto; /* Ensure the width adjusts to maintain aspect ratio */
+    height: auto; /* Ensure the height adjusts to maintain aspect ratio */
+
+
+}
+.picg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin as needed */
+}
+
+@keyframes changeImage {
+    0%, 20% {
+        opacity: 1;
+        content: url(picture/rizal\ shrine\ outside.jpg)
+    }
+    25%, 45% {
+        opacity: 1;
+        content: url(picture/RS-back.jpeg)
+    }
+    50% {
+        opacity: 1;
+        content: url(picture/beside\ rizal\ shrine.jpg);
+    }
+    65%, 85% {
+        opacity: 1;
+        content: url(picture/rizal\ entrance.jpg)
+    }
+    90%, 100% {
+        opacity: 1;
+        content: url(picture/rizal\ shrine\ outside.jpg)
+    }
+}
+.recommended ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments .comment-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+.store,
+.product,
+.review {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+.store-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Adjust as needed based on your layout */
+}
+.pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Adjust as needed based on your layout */
+}
+.store-container img {
+    width: 40vh;
+    height: 37vh;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes animate {
+    0%, 20% {
+        opacity: 1;
+        content: url(store/merchandise.png)
+    }
+    25%, 45% {
+        opacity: 1;
+        content: url(store/merch\ 2.jpg)
+    }
+    50% {
+        opacity: 1;
+        content: url(store/merchandise.png);
+    }
+    65%, 85% {
+        opacity: 1;
+        content: url(store/merch\ 2.jpg)
+    }
+    90%, 100% {
+        opacity: 1;
+        content: url(store/merchandise.png)
+    }
+}
+.product ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.review .review-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.review {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+.comment {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#commentForm {
+    margin-bottom: 15px;
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(163, 218, 245);
+    text-align: center;
+    margin-top: 30px;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    color:beige;
+    text-align: center;
+}
+li{
+    color: rgb(247, 213, 172);
+}
+.youtube-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+}
+
+.youtube-container:hover .video-wrapper {
+    transform: scale(1.009);
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.recommended p {
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 25px;
+}
+.photo-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: beige;
+    font-size: 30px; /* Adjust the font size as needed */
+    margin-bottom: -30px;
+    margin-left: 50px;
+}
+
+h6{
+    font-size: 20px; /* Adjust the font size as needed */
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    
+}
+.comment-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #comments-list {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .comment-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  
+  .comment-box p {
+    margin: 0;
+    color: beige;
+  }
+  .comment-box p:first-child {
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(46, 45, 45);
+  }
+  .review-box {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .reactions button {
+    margin-top: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+
